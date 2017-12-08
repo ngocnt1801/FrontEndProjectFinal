@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/checkFormMessage.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="loadContactEffect()" onscroll="navigationChange()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li class="actived"><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="disk">
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+</div>
+<div id="content">
+
+    <div id="header">
+        <div id="welcome" class="col-12">
+            <p id="first-line">Find us</p>
+            <p id="second-line">CONTACT</p>
+
+        </div>
+    </div>
+    <div id="text" class="col-6">
+        <h1>GET IN TOUCH</h1>
+        <p><b>The Rosa Restaurant</b> <br>
+            70 State Street <br>
+            Portsmouth, New Hampshire <br>
+            <b>Hours:</b> <br>
+            Monday - Thursday - 11am-9pm<br>
+            Friday & Saturday - 11am-10pm<br>
+            Sunday - 11am - 9pm<br>
+            We are open for lunch and dinner 7 days a week!<br>
+            <b>Phone:</b> 603.436.9715<br>
+            <br>
+            <b>Reservations/Inquiries:</b><br>
+            Limited reservations available, so please call early.<br>
+            For function space:<br>
+            Email: Leah@therosa.com<br>
+            For general questions:<br>
+            Email: rosa@therosa.com</p>
+
+    </div>
+    <div id="form" class="col-6">
+        <form action="" method="post">
+            <input type="text" placeholder="FIRST NAME" id="firstname" class="col-5">
+            <input type="text" placeholder="LAST NAME" id="lastname" class="col-5">
+            <input type="email" placeholder="EMAIL" id="email">
+            <textarea id="messsage" placeholder="MESSAGE"></textarea>
+            <input type="submit" value="SEND MESSAGE" id="button" onclick="return sendMessage()">
+        </form>
+    </div>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.306705795709!2d-70.75626588520497!3d43.077046879145215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf0dc1eee5bd%3A0x5e699d0df65ac0c9!2s70+State+Street%2C+Portsmouth%2C+NH+03801!5e0!3m2!1sen!2s!4v1488804950485" frameborder="0" style="border:0" allowfullscreen ></iframe>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

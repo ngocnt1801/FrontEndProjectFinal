@@ -1,0 +1,346 @@
+/*header parallax*/
+#header{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-image: url("../img/orderbg1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#second-line {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+/*===========================================*/
+/*if has items in cart*/
+#hasProduct{
+    width: 100%;
+    float: left;
+    padding-top: 8%;
+}
+
+/*form part*/
+#customerInfo{
+    height: auto;
+    float: left;
+    padding-left: 8.33%;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+#customerInfo table{
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+}
+#customerInfo table caption{
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+
+}
+#customerInfo span{
+    color: red;
+}
+#customerInfo table tr td{
+    /*border: 1px solid black;*/
+    height: 40px;
+    vertical-align: bottom;
+}
+#customerInfo input{
+    padding-left: 2%;
+    margin-bottom: 1%;
+}
+#customerInfo input:focus{
+    outline: none;
+    border: 2px solid #c59d5f;
+}
+#firstname{
+    width: 90%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+#lastname{
+    width: 90%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+#company{
+    width: 95%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+#email{
+    width: 90%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+#phone{
+    width: 90%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+#address{
+    width: 95%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+#city{
+    width: 95%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+
+
+
+/*note of customer about order*/
+#orderNote{
+    height: auto;
+    float: left;
+    /*border: 1px solid black;*/
+    padding-right: 8.33%;
+    box-sizing: border-box;
+
+}
+#orderNote table{
+    width: 100%;
+    height: auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+}
+#orderNote table caption{
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+#orderNote textarea{
+    width: 100%;
+    height: 300px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 1%;
+    box-sizing: border-box;
+    resize: none;
+}
+#orderNote textarea:focus{
+    outline: none;
+    border: 2px solid #c59d5f;
+}
+#orderNote td{
+    /*border: 1px solid black;*/
+    height: 40px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+/*table - bill*/
+#bill{
+    height: auto;
+    float: left;
+    /*border: 1px solid #000;*/
+    padding: 2% 8.33%;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#bill table{
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+}
+#bill caption{
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    margin-bottom: 2%;
+    letter-spacing: 0.1em;
+
+}
+#bill th{
+    height: 40px;
+    text-align: left;
+    padding-left: 1%;
+    border-bottom: 1px solid #d8d8d8;
+}
+#bill td{
+    border-bottom: 1px solid #d8d8d8;
+    height: 40px;
+    padding-left: 1%;
+}
+#orderBtn{
+    background-color: #262526;
+    color: white;
+    float: left;
+    border-radius: 3px;
+    vertical-align: middle;
+    padding: 1% 6%;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    width: 227px;
+    margin-top: 1%;
+    margin-left: 60%;
+    border: none;
+}
+#orderBtn:hover{
+    background-color: #c59d5f;
+    color: white;
+    cursor: pointer;
+}
+#orderBtn:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+/*show announcement updated successfully*/
+#cartUpdated{
+    width: 83.34%;
+    height: auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #515150;
+    border: 1px solid #d8d8d8;
+    float: left;
+    margin-left: 8.33%;
+    box-sizing: border-box;
+    margin-top: 2%;
+    padding: 1% 2%;
+    display: none;/*****************/
+}
+
+/*show when nothing in cart*/
+#emptyProduct{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left:8.33%;
+    padding-bottom: 1%;
+    display: none;/***********/
+}
+#emptyProduct p{
+    width: 100%;
+    color: #515150;
+    margin-bottom: 30px;
+    float: left;
+}
+#emptyProduct a {
+    float: left;
+    background-color: #262526;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    border-radius: 3px;
+    vertical-align: middle;
+    padding: 10px 30px;
+
+
+}
+#emptyProduct a:hover{
+    background-color: #c59d5f;
+}
+
+/******************************************************/
+
+@media screen and (max-width: 800px){
+    #second-line{
+        margin-top: 25%;
+    }
+    #orderNote{
+        padding-left: 8.33%;
+        padding-right: 4.16%;
+
+    }
+    #orderNote textarea{
+        height: 200px;
+    }
+    #orderBtn{
+        margin-left: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 560px){
+    #orderBtn{
+        margin-left: 35%;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 437px){
+    #orderBtn{
+        margin-left: 10%;
+        padding: 2%;
+    }
+
+}

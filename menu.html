@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <script src="js/headerEffect.js"></script>
+    <script src="js/otherEffect.js"></script>
+    <script src="js/shoppingCart.js"></script>
+</head>
+<body onload="updateShowing();loadMenuEffect()" onscroll="navHome()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li class="actived"><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="disk">
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+</div>
+<div id="content">
+    <div id="header">
+        <p id="second-line">THE MENU</p>
+    </div>
+    <div class="intro">
+        <p>Chef Michel Paris Jr and Head Chef Steve Groves have created a menu of dishe using the finest seasonal produce. Table service throughout for food and drinks. Taking inspiration from around the world, all the dishes on our menu are</p>
+        <p>designed for sharing. Using incredible British produce, whole animals and fish are butchered and prepared on site every day, and paired with ingredients so good they really speak for themselves.</p>
+    </div>
+    <div class="list-menu">
+        <div class="left col-6">
+            <h2>STARTERS</h2>
+            <div>
+                <p  class="name"><span>ENGLISH-ASPARAGUS</span>
+                    <span><b>$14.95</b></span></p>
+                <p class="descripttion">Asparagus, hens egg, toasted sunflower seeds, Spenwood cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>SAUSAGE STUFFED MUSHROOM</span>
+                    <span><b>$10.45</b></span></p>
+                <p class="descripttion">Roasted baby portabella, spicy Italian sausage, house made boursin cheese, red wine balsamic glaze</p>
+            </div>
+            <div>
+                <p  class="name"><span>BRUSCHETTA</span>
+                    <span><b>$9.95</b></span></p>
+                <p class="descripttion">Warm focaccia, vine ripe tomatoes, balsamic reduction, chiffonade basil, house blend cheese</p>
+            </div>
+
+            <div class="special">
+                <span class="title_special">CHEF SELECTION</span>
+                <p  class="name"><span>ARUGULA SALAD</span>
+                    <span><b>$7.95</b></span></p>
+                <p class="descripttion">Olive oil, lemon juice, red onions, grape tomatoes, garnished with shaved parmesan cheese and toasted sunflower seeds</p>
+            </div>
+            <div>
+                <p  class="name"><span>CAPRESE SALAD</span>
+                    <span><b>$12.9</b></span></p>
+                <p class="descripttion">Vine ripe tomatoes, fresh mozzarella, basil, drizzled with olive oil and aged balsamic reduction</p>
+            </div>
+            <div>
+                <p  class="name"><span>PESTO & CHICKEN</span>
+                    <span><b>$14.95</b></span></p>
+                <p class="descripttion">Roasted chicken, house made basil pesto, sautéed tomatoes, goat cheese, balsamic reduction</p>
+            </div>
+            <div>
+                <p  class="name"><span>SEASONAL SOUP</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Daily preparation</p>
+            </div>
+            <div>
+                <p  class="name"><span>PESTO</span>
+                    <span><b>$24.95</b></span></p>
+                <p class="descripttion">Basil, parmesan cheese, olive oil and cream</p>
+            </div>
+
+
+        </div>
+        <div class="right col-6">
+            <h2>MAINS</h2>
+            <div>
+                <p  class="name"><span>BOLOGNESE</span>
+                    <span><b>$26.95</b></span></p>
+                <p class="descripttion">Pork, beef, and Rosa red sauce topped with parmesan cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>SIDES</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Meatballs Spicy or Sweet Sausage</p>
+            </div>
+            <div>
+                <p  class="name"><span>PARMESAN POLENTA FRIES</span>
+                    <span><b>$12.15</b></span></p>
+                <p class="descripttion">Deep fried polenta, house blend cheese, fire roasted Pomodoro</p>
+            </div>
+            <div>
+                <p  class="name"><span>PROSCIUTTO WRAPPED SHRIMP</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Mixed greens, spiced pear relish, honey thyme dressing</p>
+            </div>
+
+            <div>
+                <p  class="name"><span>CREME BRULEE</span>
+                    <span><b>$5.25</b></span></p>
+                <p class="descripttion">Rich vanilla custard with a caramelised sugar crust</p>
+            </div>
+
+            <div class="special">
+                <span class="title_special">NEW</span>
+                <p  class="name"><span>TARTE TATIN</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Caramelised apple tart, vanilla ice cream</p>
+            </div>
+            <div>
+                <p  class="name"><span>ASSIETTE DE FROMAGES</span>
+                    <span><b>$6.95</b></span></p>
+                <p class="descripttion">French cheese selection, chutney and biscuits</p>
+            </div>
+            <div>
+                <p  class="name"><span>PARMESANS</span>
+                    <span><b>$24.95</b></span></p>
+                <p class="descripttion">Breaded and fried served over Rosa red sauce and topped with mozzarella cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>MARGHERITA</span>
+                    <span><b>$24.95</b></span></p>
+                <p class="descripttion">Fried prosciutto, roma tomatoes, fresh mozzarella, pesto, basil, Tuscan Pane Bread</p>
+            </div>
+        </div>
+        <div class="symbol col-12">✻</div>
+    </div>
+    <div class="parallax bg2"><p class="article">LUNCH</p></div>
+    <div class="list-menu">
+        <div class="left col-6">
+            <div>
+                <p  class="name"><span>CAMPO LINDO CHICKEN</span>
+                    <span><b>$24.95</b></span></p>
+                <p class="descripttion">Fava beans, artchokes, farro & black current gastrique</p>
+            </div>
+            <div>
+                <p  class="name"><span>ALLA VODKA</span>
+                    <span><b>$29.95</b></span></p>
+                <p class="descripttion">Tomatoes, garlic, shallots and goat cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>SEA-TROUT</span>
+                    <span><b>$26.95</b></span></p>
+                <p class="descripttion">Roast Trout, English asparagus, Jersey Royals, watercress</p>
+            </div>
+            <div>
+                <p  class="name"><span>HARVEST SALAD</span>
+                    <span><b>$12.95</b></span></p>
+                <p class="descripttion">Roasted butternut squash, apples, candied pumpkin seeds, warm bacon vinaigrette</p>
+            </div>
+            <div>
+                <p  class="name"><span>ROASTED STEAK ROULADE</span>
+                    <span><b>$14.95</b></span></p>
+                <p class="descripttion">Mint parsley with apple cider vinegar, salt, sugar & spices</p>
+            </div>
+            <div>
+                <p  class="name"><span>BRUSCHETTA</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Warm focaccia, vine ripe tomatoes, balsamic reduction, chiffonade basil, house blend cheese/p>
+            </div>
+
+        </div>
+        <div class="right col-6">
+            <div>
+                <p  class="name"><span>ROSA RED SAUCE</span>
+                    <span><b>$12.95</b></span></p>
+                <p class="descripttion">Sauce garnished with fresh parsley and parmesan cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>ANTIPASTO</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Imported meats and cheeses from Italy</p>
+            </div>
+            <div>
+                <p  class="name"><span>FILET DE SAUMON</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Baked salmon fillet, hollandaise sauce, rosemary salt potatoes</p>
+            </div>
+            <div>
+                <p  class="name"><span>CHICKEN PICCATA</span>
+                    <span><b>$14.95</b></span></p>
+                <p class="descripttion">Sautéed with capers, lemon, parsley, white wine, garlic served over fettuccini</p>
+            </div>
+            <div>
+                <p  class="name"><span>FRIED BRESSLES SPROUTS</span>
+                    <span><b>$12.15</b></span></p>
+                <p class="descripttion">Deep fried brussles sprouts, truffle butter, Parmesan cream sauce, Grana Padino cheese</p>
+            </div>
+            <div>
+                <p  class="name"><span>POULET CORDON BLEU</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Paupiette of chicken, blue cheese & ham, rosemary salt  and beans</p>
+            </div>
+        </div>
+        <div class="symbol col-12">✻</div>
+    </div>
+    <div class="parallax bg3"><p class="article">DINNER</p></div>
+    <div class="list-menu">
+        <div class="left col-6">
+            <div>
+                <p  class="name"><span>CORNISH-MACKEREL</span>
+                    <span><b>$10.45</b></span></p>
+                <p class="descripttion">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+            </div>
+            <div>
+                <p  class="name"><span>QUAIL</span>
+                    <span><b>$9.95</b></span></p>
+                <p class="descripttion">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+            </div>
+            <div>
+                <p  class="name"><span>CURRY-TAMARILLOR</span>
+                    <span><b>$7.95</b></span></p>
+                <p class="descripttion">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+            </div>
+
+            <div>
+                <p  class="name"><span>CRISPY</span>
+                    <span><b>$12.95</b></span></p>
+                <p class="descripttion">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+            </div>
+            <div class="special">
+                <span class="title_special">RECOMMENDED</span>
+                <p  class="name"><span>CHICKEN MARSALA</span>
+                    <span><b>$14.95</b></span></p>
+                <p class="descripttion">Sautéed mushrooms, shallots, garlic, and marsala wine served over fettuccini</p>
+            </div>
+            <div>
+                <p  class="name"><span>CLASSIC MINETRONE</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Cannellini beans, fresh vegetables, and tomatoes</p>
+            </div>
+            <div>
+                <p  class="name"><span>ROSA ITALIAN</span>
+                    <span><b>$15.95</b></span></p>
+                <p class="descripttion">Prosciutto, salami, capicola, provolone, hot relish, mayonnaise, on a hoagie roll finished with our house Italian vinaigrette</p>
+            </div>
+
+        </div>
+        <div class="right col-6">
+            <h2>DESSERT</h2>
+            <div>
+                <p  class="name"><span>TIRAMISU</span>
+                    <span><b>$4.95</b></span></p>
+                <p class="descripttion">Lady fingers soaked in Kahlua, Baileys and Creme de Cacao, mascarpone cheese and cocoa powder</p>
+            </div>
+            <div>
+                <p  class="name"><span>PUMPKIN POT DU CREME</span>
+                    <span><b>$9.95</b></span></p>
+                <p class="descripttion">Creamy custard with vanilla spices & whipped cream</p>
+            </div>
+            <div>
+                <p  class="name"><span>HOMEMAGE BROWNIE SUNDAE</span>
+                    <span><b>$6.95</b></span></p>
+                <p class="descripttion">Vanilla gelato, hot fudge and whip cream</p>
+            </div>
+            <div>
+                <p  class="name"><span>CAKE OF THE DAY</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Ask your server for todays choice!</p>
+            </div>
+            <div>
+                <p  class="name"><span>CANNOLI</span>
+                    <span><b>$12.15</b></span></p>
+                <p class="descripttion">House made ricotta filling, powdered sugar and chocolate sauce</p>
+            </div>
+            <div>
+                <p  class="name"><span>VANILLA CHEESECAKE</span>
+                    <span><b>$13.95</b></span></p>
+                <p class="descripttion">Oreo crust and strawberry compote</p>
+            </div>
+        </div>
+        <div class="symbol col-12">✻</div>
+    </div>
+    <div class="parallax bg4"><p class="article">DRINKS</p></div>
+    <div class="list-menu">
+        <div class="left col-6">
+            <div>
+                <p  class="name"><span><b>CHAMPAGNE</b></span>
+                    <span><b>Bottle</b></span></p>
+            </div>
+            <div>
+                <p  class="name"><span>CHAPEL DOWN</span>
+                    <span><b>$47.95</b></span></p>
+                <p class="descripttion">Brut Rose</p>
+            </div>
+            <div>
+                <p  class="name"><span>CHANDON</span>
+                    <span><b>$46.95</b></span></p>
+                <p class="descripttion">Brut Imperial</p>
+            </div>
+            <div>
+                <p  class="name"><span>CHANDON</span>
+                    <span><b>$46.95</b></span></p>
+                <p class="descripttion">Brut ARG</p>
+            </div>
+            <div>
+                <p  class="name"><span><b>BEERS</b></span>
+                    <span><b>Lager</b></span></p>
+            </div>
+            <div>
+                <p  class="name"><span>MEANTIME PILSNER</span>
+                    <span><b>$4.45</b></span></p>
+                <p class="descripttion">Hells Lager</p>
+            </div>
+            <div>
+                <p  class="name"><span>CAMDEN HELLS LAGER</span>
+                    <span><b>$5.95</b></span></p>
+                <p class="descripttion">Pale Ale</p>
+            </div>
+            <div>
+                <p  class="name"><span>WYLD WOOD</span>
+                    <span><b>$5.50</b></span></p>
+                <p class="descripttion">Apple Cider
+                </p>
+            </div>
+
+        </div>
+        <div class="right col-6">
+            <div>
+                <p  class="name"><span><b>WHITE WINE</b></span>
+                    <span><b>Bottle</b></span></p>
+            </div>
+            <div>
+                <p  class="name"><span>GASCOGNE BLANC</span>
+                    <span><b>$20.95</b></span></p>
+                <p class="descripttion">Cuvee Jean Paul, 2013</p>
+            </div>
+            <div>
+                <p  class="name"><span>ALPHA ZETA</span>
+                    <span><b>$36.95</b></span></p>
+                <p class="descripttion">Chardonnay, Veneto, 2011</p>
+            </div>
+            <div>
+                <p  class="name"><span>FAIRVIEW DARLING</span>
+                    <span><b>$26.95</b></span></p>
+                <p class="descripttion">$26.95</p>
+            </div>
+            <div>
+                <p  class="name"><span><b>RED WINE</b></span>
+                    <span><b>Bottle</b></span></p>
+            </div>
+            <div>
+                <p  class="name"><span>EXCELSIOR</span>
+                    <span><b>$29.95</b></span></p>
+                <p class="descripttion">Cabernet Sauvognon, South Africa, 2011</p>
+            </div>
+            <div>
+                <p  class="name"><span>MALBEC MONTES CLASSIC</span>
+                    <span><b>$35.95</b></span></p>
+                <p class="descripttion">Colchagua Valley, Mendoza, 2012</p>
+            </div>
+            <div>
+                <p  class="name"><span>16 STOPS MCLAREN</span>
+                    <span><b>$35.50</b></span></p>
+                <p class="descripttion">Vale Shiraz, Australia, 2012</p>
+            </div>
+        </div>
+        <div class="symbol col-12">✻</div>
+    </div>
+    <div class="champange">
+        <p>CHAMPAGNE ON US
+            <br><br>
+            Every Monday, Tuesday and Wednesday evening, we’re offering groups of 10 or more that book an area in our bar a complimentary bottle of Champagne.
+            Call our reservations team on (027) 8338 145 for more information.</p>
+    </div>
+
+
+
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

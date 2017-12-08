@@ -1,0 +1,312 @@
+/*header parallax*/
+#header{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/reservationbg1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+#welcome{
+    margin-top: 5%;
+}
+#welcome > p{
+    width: 100%;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+}
+#welcome  span{
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: #c59d5f;
+}
+#first-line{
+    color: #c59d5f;
+    font-size: 85px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom: -60px;
+    opacity: 0;
+
+}
+#first-line:first-letter{
+    font-size: 1.22em;
+}
+#second-line{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+    opacity: 0;
+
+}
+/*show announcement updated successfully*/
+#cartUpdated{
+    width: 83.34%;
+    height: auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #515150;
+    border: 1px solid #d8d8d8;
+    float: left;
+    margin-left: 8.33%;
+    box-sizing: border-box;
+    margin-top: 2%;
+    padding: 1% 2%;
+    display: none;
+
+}
+
+
+
+
+/*show list item in cart*/
+#listItem{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+#listItem div{
+    width: 83.33%;
+    height:auto;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 8.33%;
+
+
+
+}
+#listItem table{
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    color: #515150;
+
+
+}
+#productTable{
+    border: 1px solid #eee;
+}
+#tableLarge img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+#tableLarge th{
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding: 1% 1%;
+
+}
+#tableLarge tr td{
+    border-bottom: 1px solid #eee;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0.5% 1%;
+}
+.amount{
+    background-color: #262526;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    width: 70px;
+    height: 36px;
+    float: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.amount:focus{
+    outline: none;
+}
+.amount:hover{
+    cursor: pointer;
+}
+.close{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.close:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+#productTable > input{
+    float: left;
+    border-radius: 3px;
+    vertical-align: middle;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    margin-left: 1%;
+    width: 200px;
+    margin-top: 1%;
+}
+#productTable > input:focus{
+    outline: none;
+
+}
+#productTable > input[type='button']{
+
+    background-color: #262526;
+    color: white;
+    border-color: #262526;
+}
+#productTable > input[type='button']:hover{
+
+    background-color: #c59d5f;
+    color: white;
+    border-color: #c59d5f;
+    cursor: pointer;
+
+}
+#updateBtn{
+    position: absolute;
+    right: 9.33%;
+}
+
+#productTable{
+    padding-bottom: 1%;
+}
+#tableLarge{
+    /*display: none;*/
+}
+.tableSmall{
+    display: none;
+    width: 100%;
+    border: 1px solid #eeeeee;
+
+}
+
+.tableSmall img{
+    width: 100px;
+    height: 100px;
+}
+.tableSmall td{
+    width: 50%;
+
+    border-bottom:1px solid #eeeeee ;
+    padding: 0.5% 1%  ;
+}
+.tableSmall tr td:first-child{
+    font-weight: bold;
+}
+
+
+
+
+
+
+#totalTable caption{
+    font-size: 37px;
+    color: #262526;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding: 2% 0%;
+}
+#totalTable table tr td:first-child{
+    font-weight: bold;
+    border-left: 1px solid #eee;
+
+}
+#totalTable table tr td:last-child{
+
+    border-right: 1px solid #eee;
+
+}
+#totalTable table tr td{
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding: 1% 1%;
+}
+#totalTable input{
+    background-color: #262526;
+    border: 1px solid #262526;
+    border-radius: 3px;
+    color: white;
+    width: 273px;
+    padding: 10px 0px;
+    position: absolute;
+    right: 9.33%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    font-family: 'Cabin', sans-serif;
+}
+#totalTable input:hover{
+    background-color: #c59d5f;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #c59d5f;
+}
+
+
+/*show when nothing in cart*/
+#emptyProduct{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left:8.33%;
+    padding-bottom: 1%;
+    display: none;
+}
+#emptyProduct p{
+    width: 100%;
+    color: #515150;
+    margin-bottom: 30px;
+    float: left;
+}
+#emptyProduct a {
+    float: left;
+    background-color: #262526;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    border-radius: 3px;
+    vertical-align: middle;
+    padding: 10px 30px;
+
+
+}
+#emptyProduct a:hover{
+    background-color: #c59d5f;
+}
+
+@media screen and (max-width: 800px){
+    #welcome{
+        margin-top: 15%;
+    }
+    #tableLarge{
+        display: none;
+    }
+    .tableSmall{
+        display: inline-table;
+
+    }
+}

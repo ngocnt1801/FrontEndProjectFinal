@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/products.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="updateShowing();loadOrder()" onscroll="navigationChange()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li class="actived"><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+    <div id="header">
+        <div id="welcome" class="col-12">
+            <p id="first-line">Discover</p>
+            <p id="second-line">ORDER ONLINE</p>
+            <table align="center" class="col-4">
+                <tr>
+                    <td><hr id="leftline"></td>
+                    <td><span id="symbol">✻</span></td>
+                    <td><hr id="rightline"></td>
+                </tr>
+            </table>
+            <p id="third-line">Hand-crafted dishes sourced from the best incredients.</p>
+        </div>
+    </div>
+    <div id="products">
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)">
+            <img src="img/order1a.jpg" alt=""  onclick="openDetailPage(1, this)">
+            <p class="name"  onclick="openDetailPage(1, this)">JERK CHICKEN</p>
+            <p class="sub"  onclick="openDetailPage(1, this)">FRESH JAMAICA NUT-FREE</p>
+            <hr  onclick="openDetailPage(1, this)">
+            <p class="price">£14.95</p>
+            <p class='addtocart' onclick="addItem(1, this)"><span>ADD TO CARD</span></p>
+        </div>
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)" >
+            <img src="img/order2a.jpg" alt="" onclick="openDetailPage(2, this)">
+            <p class="name"  onclick="openDetailPage(2, this)">CHILLI CRAB</p>
+            <p class="sub"  onclick="openDetailPage(2, this)">FRESH NUT-FREE SINGAPORE</p>
+            <hr  onclick="openDetailPage(2, this)">
+            <p class="price">£29.45</p>
+            <p class='addtocart' onclick="addItem(2, this)"><span>ADD TO CARD</span></p>
+        </div>
+        <div style="clear: both" id="clr1"></div>
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)" >
+            <img src="img/order3a.jpg" alt="" onclick="openDetailPage(3, this)">
+            <p class="name" onclick="openDetailPage(3, this)">AREPAS</p>
+            <p class="sub" onclick="openDetailPage(3, this)">LIGHT COLOMBIA ORGANIC</p>
+            <hr onclick="openDetailPage(3, this)">
+            <p class="price">£4.95</p>
+            <p class='addtocart' onclick="addItem(3, this)"><span>ADD TO CARD</span></p>
+        </div>
+        <div style="clear: both" id="clr2"></div>
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)" >
+            <img src="img/order4a.jpg" alt="" onclick="openDetailPage(4, this)">
+            <p class="name" onclick="openDetailPage(4, this)">PIEROGI</p>
+            <p class="sub" onclick="openDetailPage(4, this)">LOW-CARB NUT-FREE ORGANIC</p>
+            <hr onclick="openDetailPage(4, this)">
+            <p class="price">£12.95</p>
+            <p class='addtocart' onclick="addItem(4, this)"><span>ADD TO CARD</span></p>
+        </div>
+        <div style="clear: both" id="clr3"></div>
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)">
+            <img src="img/order5a.jpg" alt=""  onclick="openDetailPage(5, this)">
+            <p class="name"  onclick="openDetailPage(5, this)">TOSTADAS</p>
+            <p class="sub"  onclick="openDetailPage(5, this)">LOW-CARB ORGANIC</p>
+            <hr  onclick="openDetailPage(5, this)">
+            <p class="price">£24.95</p>
+            <p class='addtocart' onclick="addItem(5, this)"><span>ADD TO CARD</span></p>
+        </div>
+        <div class="item" onmouseover="showAddToCart(this)" onmouseout="showPrice(this)">
+            <img src="img/order6a.jpg" alt=""  onclick="openDetailPage(6, this)">
+            <p class="name"  onclick="openDetailPage(6, this)">CEVICHE</p>
+            <p class="sub"  onclick="openDetailPage(6, this)">FRESH PERU NUT-FREE</p>
+            <hr  onclick="openDetailPage(6, this)">
+            <p class="price" >£9.45</p>
+            <p class='addtocart' onclick="addItem(6, this)"><span>ADD TO CARD</span></p>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

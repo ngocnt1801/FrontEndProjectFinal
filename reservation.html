@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="loadReservationEffect()" onscroll="navHome()" onresize="navResposive()" >
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li class="actived"><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="disk">
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+</div>
+<div id="content">
+
+    <div id="header">
+        <div id="welcome" class="col-12">
+            <p id="first-line">Make a</p>
+            <p id="second-line">RESERVATION</p>
+            <table align="center" class="col-4">
+                <tr>
+                    <td><hr id="leftline"></td>
+                    <td><span id="symbol">✻</span></td>
+                    <td><hr id="rightline"></td>
+                </tr>
+            </table>
+            <p id="third-line">Booking a table online is easy and takes just a couple of minutes.</p>
+        </div>
+    </div>
+    <div id="make-reservation">
+
+        <div id="calender">
+            <p class="col-12 first">MAKE ONLINE RESERVATION</p>
+            <p class="col-12 second">POWERED BY OPENTABLE</p>
+
+            <table align="center" id="tb2" cellpadding="5px">
+                <tr>
+                    <td>
+                        <div class="col-2 day">
+                            <img src="img/ic_canlendar.svg" alt="">
+                            <input type="date" id="cal">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-2 time">
+                            <img src="img/ic_clock.svg" alt="">
+                            <input type="time" value="19:00:00" id="time" min="11:00:00" max="21:00:00">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-2 user">
+                            <img src="img/ic_user.svg" alt="">
+                            <select name="" id="user">
+                                <script>
+                                    var t=document.getElementById('user');
+                                    i = 1;
+                                    var options="";
+                                    while (i <= 10){
+                                        options+="<option>"+ i +" People</option>";
+                                        i++;
+                                    }
+                                    t.innerHTML=options;
+                                </script>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="img/phone.svg" alt="">
+                            <input type="number" id="phone" required="required">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button" onclick="findATable()">
+                            FIND A TABLE
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <div id="anounce">
+
+            </div>
+        </div>
+        <div id="intro">
+            <p><span>RESERVE BY PHONE</span>
+                <br><br><br>
+                We take reservations for lunch and dinner. To make a reservation, please call us at (027) 8338 145 between 10am-6pm, Monday to Friday.
+                <br><br>
+                We do not book the bar area – we leave this for walk-in guests to ensure that we always offer some tables for those who have not booked.</p>
+            <p><span>PRIVATE DINING & EVENTS</span>
+                <br><br><br>
+                Whatever your event or celebration, we are here to make your special day a truly memorable one. Rosa’s private dining experts are more than happy to create custom floral arrangements and arrange for guests to meet Chef Moise during the course of their meal. For parties of 8-12 we have the roastery table which is available for private hire.</p>
+        </div>
+    </div>
+    <div class="parallax"></div>
+    <div id="private">
+        <div class="text2 col-5">
+            <p  class="title">The private</p>
+            <p class="second-title">MEZZANINE</p>
+            <p class="symbol">✻</p>
+            <p class="intro">Rosa’s 50 seat room, “The Meazzanine Room” features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, “Barbaresco,” is available for meetings, birthdays and other occasions.
+                <br><br><b>Seat up to 50 guests</b></p>
+        </div>
+        <div class="image2 col-5" >
+            <img src="img/reservation1.jpg" alt="">
+        </div>
+    </div>
+    <div id="dinning">
+        <div class="image col-5" >
+            <img src="img/reservation2.jpg" alt="">
+        </div>
+        <div class="text col-5">
+            <p  class="title">The dining</p>
+            <p class="second-title">CROWN</p>
+            <p class="symbol">✻</p>
+            <p class="intro">Overlooking the dining room and open kitchen, can seat up to 75 guests or a standing reception of 130 guests. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br><br><b>Seat up to 75 guests</b></p>
+        </div>
+
+    </div>
+    <div class="champange">
+        <p>CHAMPAGNE ON US
+            <br><br>
+            Every Monday, Tuesday and Wednesday evening, we’re offering groups of 10 or more that book an area in our bar a complimentary bottle of Champagne.
+            Call our reservations team on (027) 8338 145 for more information.</p>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="loadHomeEffect();updateShowing()" onscroll="navHome()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li class="actived"><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="disk">
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+    <!--<div class="bullet"></div>-->
+</div>
+<div id="content">
+
+    <div id="header" >
+        <img src="img/homebg1.jpg" alt="" id="img_bg">
+        <div id="title">
+            <div id="welcome" class="col-4">
+                <p id="first-line">Welcome</p>
+                <p id="second-line">THE ROSA</p>
+                <hr id="hrLeft">
+                <span>✻</span>
+                <hr>
+                <p id="third-line">READY TO BE OPENED</p>
+                <p id="fourth-line"><a href="reservation.html">EXPLORE</a></p>
+            </div>
+
+        </div>
+    </div>
+    <div id="blog_part">
+        <div class="text2 col-5">
+            <p  class="title">Contact</p>
+            <p class="second-title">US</p>
+            <p class="symbol">✻</p>
+            <p class="intro">The Rosa’s restaurant and bar are 70 State Street
+                Portsmouth, New Hampshire . The restaurant and bar both have their own entrances.If you have questions or comments, please get a hold of us in whichever way is most convenient. Ask away. There is no reasonable question that our team can not answer</p>
+            <p class="link"><a href="contact.html">FIND US</a></p>
+        </div>
+        <div class="image2 col-5" >
+            <img src="img/home1.jpg" alt="">
+            <img src="img/home2.jpg" alt="">
+        </div>
+    </div>
+    <div id="menu_title" class="parallax">
+        <p class="first-line">Tasteful</p>
+        <p class="second-line">RECIPES</p>
+
+    </div>
+    <div id="menu_part">
+        <div class="image col-5" >
+            <img src="img/home3.jpg" alt="">
+            <img src="img/home4.jpg" alt="">
+            <img src="img/home5.jpg" alt="">
+            <img src="img/home6.jpg" alt="">
+        </div>
+        <div class="text col-5">
+            <p  class="title">Discover</p>
+            <p class="second-title">MENU</p>
+            <p class="symbol">✻</p>
+            <p class="intro">For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
+            <p class="link"><a href="menu.html">VIEW THE FULL MENU</a></p>
+        </div>
+    </div>
+    <div id="reser_title" class="parallax">
+        <p class="first-line">The perfect</p>
+        <p class="second-line">BLEND</p>
+    </div>
+    <div id="reservation_part">
+
+        <div class="text2 col-5">
+            <p  class="title">Culinary</p>
+            <p class="second-title">DELIGHT</p>
+            <p class="symbol">✻</p>
+            <p class="intro">We promise an intimate and relaxed dining experience that offers something different to local and foreign patrons and ensures you enjoy a memorable food experience every time.</p>
+            <p class="link"><a href="reservation.html">MAKE A RESERVATION</a></p>
+        </div>
+        <div class="image2 col-5" >
+            <img src="img/home7.jpg" alt="">
+            <img src="img/home8.jpg" alt="">
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

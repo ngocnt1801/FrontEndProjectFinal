@@ -1,0 +1,377 @@
+
+#header{
+    width: 100%;
+    height: auto;/*fix thanh auto*/
+    float: left;
+
+}
+
+/*make parallax for header*/
+#header img{
+    width: 100% ;
+    height: 100%;
+    position: fixed;
+}
+#title{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    color: white;
+    /*opacity: 0;*/
+}
+
+/*text in center header*/
+#welcome{
+    margin-left: 33.33%;
+    margin-top: 15%;
+}
+#welcome > p{
+    width: 100%;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+}
+#welcome > span{
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: #c59d5f;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+#welcome > hr{
+    width: 42%;
+    float: left;
+    padding-left: 2%;
+
+}
+#hrLeft{
+    margin-left: 0%;
+}
+#first-line{
+    color: #c59d5f;
+    font-size: 85px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom: -60px;
+
+}
+#first-line:first-letter{
+    font-size: 1.22em;
+}
+#second-line{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+}
+#third-line{
+    font-weight: 400;
+    letter-spacing: 0.323em;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+#fourth-line{
+    width: 20%!important;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    color: black;
+    letter-spacing: 0.2em;
+    margin-left: 35%;
+}
+#fourth-line a{
+    text-decoration: none;
+}
+#fourth-line:hover{
+    background-color: #c59d5f;
+}
+#fourth-line a:active{
+    color: black;
+}
+#fourth-line a:visited{
+    color: #000;
+}
+
+
+/****************************/
+/*Blog part*/
+/*******************************************/
+/*parallax for blog !!!!!!!!! L A T E R !!!!!!!!*/
+
+#blog_part{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: white;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/*************************/
+/*parallax menu*/
+
+#menu_title{
+    width: 100%;
+    height: 400px;
+    float: left;
+    /*background-color: midnightblue;*/
+    position: relative;
+    background-image: url("../img/homebg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+/*text in parallax*/
+.first-line{
+    color: #c59d5f;
+    font-size: 100px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom: -100px;
+
+}
+.first-line:first-letter{
+    font-size: 1.22em;
+}
+.second-line{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+/*menu introduce*/
+#menu_part {
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: white;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.image{
+    margin-left: 7%;
+    margin-right: 2%;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+.image img{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.text{
+    float: left;
+    margin-right: 5%;
+    /*border: 2px solid black;*/
+    text-align: center;
+
+}
+.title{
+    color: #c59d5f;
+    font-size: 100px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-top: 10%;
+    margin-bottom: -100px;
+}
+.second-title{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    color: #262526;
+}
+.symbol{
+    font-size: 17px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #9a9998;
+}
+.intro{
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    color: #515150;
+    line-height: 1.7;
+    padding: 10px;
+    
+}
+.link a {
+    color: #c59d5f;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    padding: 3px 0px;
+    border-bottom: 2px solid #c59d5f;
+    font-family: 'Cabin', sans-serif;
+}
+.link a:hover{
+    color: #262526;
+    border-bottom: 2px solid #262526;
+}
+
+/*********************************************/
+/*parallax for reservation !!!!!!!!!! L A T E R*/
+#reser_title{
+    width: 100%;
+    height: 400px;
+    float: left;
+    /*background-color: chartreuse;*/
+    position: relative;
+    background-image: url("../img/homebg3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/*reservation such as menu, different in postioin*/
+#reservation_part{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: white;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.image2{
+
+    margin-right: 5%;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+.image2 img{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.text2{
+    float: left;
+    margin-left: 7%;
+    margin-right: 2%;
+    /*border: 2px solid black;*/
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 800px){
+    #disk{
+        display: none;
+    }
+    /*text in center header*/
+    #disk{
+        display: none;
+    }
+    #welcome{
+        margin-left: 0%;
+        margin-top: 35%;
+    }
+    #welcome > p{
+        width: 100%;
+        /*border: 1px solid yellow;*/
+        text-align: center;
+        margin-top: 0px;
+        float: left;
+    }
+    #welcome > span{
+        width: 10%;
+        float: left;
+        text-align: center;
+        color: #c59d5f;
+        animation: mymove 1s infinite;
+    }
+
+    @keyframes mymove {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+    }
+    #welcome > hr{
+        width: 30%!important;
+        float: left;
+        padding-left: 2%;
+
+    }
+    #hrLeft{
+        margin-left: 12%!important;
+    }
+    #first-line{
+        color: #c59d5f;
+        font-size: 85px;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        margin-bottom: -60px;
+
+    }
+    #first-line:first-letter{
+        font-size: 1.22em;
+    }
+    #second-line{
+        font-size: 45px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-bottom: 0px;
+    }
+    #third-line{
+        font-weight: 400;
+        letter-spacing: 0.323em;
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    #fourth-line{
+        width: 20%!important;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 12px;
+        border-radius: 3px;
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: white;
+        color: black;
+        letter-spacing: 0.2em;
+        margin-left: 35%;
+    }
+    #fourth-line a{
+        text-decoration: none;
+    }
+    #fourth-line:hover{
+        background-color: #c59d5f;
+        cursor: pointer;
+    }
+    #fourth-line a:active{
+        color: black;
+    }
+    #fourth-line a:visited{
+        color: #000;
+    }
+    .text2{
+        margin-left: 0%;
+    }
+    .image2 img{
+        margin-left: 3%;
+    }
+    .image{
+        margin-left: 3%;
+    }
+}
+

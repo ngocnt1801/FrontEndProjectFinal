@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/products.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="updateShowing();loadCartEffect()" onscroll="navigationChange()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+    <div id="header">
+        <div id="welcome" class="col-12">
+            <p id="first-line">Your</p>
+            <p id="second-line">CART</p>
+
+        </div>
+    </div>
+    <!--<div id="cartUpdated">Cart updated</div>-->
+    <div id="listItem">
+        <div id="productTable">
+            <table cellspacing="0" id="tableLarge">
+                <!--<tr>-->
+                    <!--<th></th>-->
+                    <!--<th>Product</th>-->
+                    <!--<th>Price</th>-->
+                    <!--<th>Quantity</th>-->
+                    <!--<th>Total</th>-->
+                    <!--<th></th>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><img src="img/order1.jpg" alt=""></td>-->
+                    <!--<td><span>Pesto Cauliflower</span></td>-->
+                    <!--<td>&pound;14.95</td>-->
+                    <!--<td><input type="number" min="1" max="30" value="1" class="amount"></td>-->
+                    <!--<td>&pound;29.90</td>-->
+                    <!--<td><span class="close">x</span></td>-->
+                <!--</tr>-->
+
+
+            </table>
+
+            <table id="tbSmall">
+
+            </table>
+
+
+
+            <!--<input type="text" placeholder="COUPON CODE" id="sale">-->
+            <!--<input type="button" value="APPLY COUPTON" onclick="checkCode()" >-->
+            <!--<input type="button" disabled="disabled" value="UPDATE CART" id="updateBtn">-->
+        </div>
+        <div id="totalTable">
+            <table cellspacing="0">
+                <caption>CART TOTALS</caption>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subcash">&pound;</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="cash">&pound;</td>
+                </tr>
+            </table>
+            <input type="button" value="PROCEED TO CHECKOUT" onclick="window.location.replace('checkout.html')">
+        </div>
+    </div>
+    <div id="emptyProduct">
+        <p>Your cart is currently empty</p>
+        <a href="order.html">RETURN TO SHOP</a>
+    </div>
+
+
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/*header parallax*/
+#header{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-image: url("../img/orderbg1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#second-line {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+
+
+.thank{
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #515150;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-left: 8.33%;
+    margin-top: 3%;
+}
+#bill{
+    width: 35%;
+    float: left;
+    margin-left: 8.33%;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    color: #515150;
+}
+#bill th{
+    /*height: 30px;*/
+    font-size: 12px;
+    font-weight: normal;
+    border-right: 1px dashed #d8d8d8;
+    padding-bottom: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#bill th:last-child{
+    border-right: none;
+
+}
+#bill th:first-child{
+    padding-left: 0;
+}
+#bill td{
+    /*height: 30px;*/
+    border-right: 1px dashed #d8d8d8;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+}
+#bill td:first-child{
+    padding-left: 0;
+}
+#bill td:last-child{
+    border-right: none;
+}
+#isProcessing{
+    width: 83.33%;
+    height: auto;
+    float: left;
+    margin-left: 8.33%;
+    border-bottom: 1px dotted #9a9998;
+
+}
+#car{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    top:18px;
+}
+
+@media screen and (max-width: 800px){
+    #second-line{
+        margin-top: 20%;
+    }
+    #bill{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 545px){
+    #bill{
+        width: 80%;
+    }
+}

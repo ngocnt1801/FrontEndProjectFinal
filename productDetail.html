@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rosa</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/productDetail.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<script src="js/products.js"></script>
+<script src="js/headerEffect.js"></script>
+<script src="js/otherEffect.js"></script>
+<script src="js/shoppingCart.js"></script>
+<body onload="initialize(); updateShowing()">
+<div class="nav" id="navigation">
+    <div class="logo col-2" id="logo"></div>
+    <div class="menu col-9">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><img src="img/ic_shopping_b.png" alt="" id="icshopping">
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul >
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+
+    <div id="top" class="col-10">
+        <div id="image" class="col-6">
+            <img src="img/order1.jpg" alt="">
+        </div>
+        <div id="detail" class="col-6">
+            <p id="line1"><span>ORDER &#8227 </span>SPICY BEEF AND TOFU SALAD</p>
+            <p  id="line2">SPICY BEEF AND TOFU SALAD</p>
+            <p  id="line4">£14.95</p>
+            <p  id="line5">It’s never been easier to sell online. ROSA lets you easily add a fully integrated e-commerce store to your website using the famous WooCommerce plugin. This product page demonstrates a “Simple product”. This is only for demo purposes – no orders shall be fulfilled.</p>
+            <input type="number" min="1" max="100" value="1" id="amount">
+            <p id="line6">ADD TO CART</p>
+
+
+        </div>
+    </div>
+    <div id="bottom" class="col-10">
+        <div id="head" >
+            <p><span>DESCRIPTION</span></p>
+        </div>
+        <div id="description">
+            <p>An online shop evokes the physical analogy of buying products or services at a bricks-and-mortar retailer or shopping center; the process is called business-to-consumer (B2C) online shopping.
+                <br><br>
+                Retail success is no longer all about physical stores. This is evident because of the increase in retailers now offering online store interfaces for consumers. With the growth of online shopping, comes a wealth of new market footprint coverage opportunities for stores that can appropriately cater to offshore market demands and service requirements.</p>
+            <p>✻</p>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

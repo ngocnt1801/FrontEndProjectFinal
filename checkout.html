@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <script src="js/headerEffect.js"></script>
+    <script src="js/otherEffect.js"></script>
+    <script src="js/shoppingCart.js"></script>
+    <script src="js/checkFormMessage.js"></script>
+</head>
+<body onload="loadMenuEffect();initialize();showProductOrder();" onscroll="navigationChange()" onresize="navResposive()">
+<div class="nav" id="navigation">
+    <div id="icmenu" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="logo" id="logo"></div>
+    <div class="menu" id="menuBar">
+        <ul>
+            <li><a href="home.html" target="f">HOME</a></li>
+            <li><a href="reservation.html" target="f">RESERVATION</a></li>
+            <li><a href="menu.html" target="f">MENU</a></li>
+            <li><a href="order.html" target="f">ORDER</a></li>
+            <li><a href="contact.html" target="f">CONTACT</a></li>
+            <li  onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="cart.html"><img src="img/ic_shopping_w.png" alt="" id="icshopping"></a>
+                <div id="showAmount">0</div>
+                <div id="submenu">
+                    <ul>
+                        <li id="cost">£0.00</li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <div id="header">
+        <p id="second-line">CHECKOUT</p>
+    </div>
+
+    <!--<div id="cartUpdated">Cart updated</div>-->
+
+    <div id="emptyProduct">
+        <p>Your cart is currently empty</p>
+        <a href="order.html">RETURN TO SHOP</a>
+    </div>
+
+    <div id="hasProduct">
+        <div id="customerInfo" class="col-6">
+            <form action="home.html">
+                <table>
+                    <caption>BILLING DETAILS</caption>
+                    <tr>
+                        <td>First Name <span>*</span></td>
+                        <td>Last Name <span>*</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="firstname" required="required"></td>
+                        <td><input type="text" id="lastname" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Company Name</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="company"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address <span>*</span></td>
+                        <td>Phone <span>*</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="email" required="required"></td>
+                        <td><input type="phone" id="phone" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Address <span>*</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="address, street, district" id="address" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Town / City <span>*</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="city" required="required"></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+        <div id="orderNote" class="col-6">
+            <table>
+                <caption>ADDITIONAL INFORMATION</caption>
+                <tr>
+                    <td>Order Notes</td>
+                </tr>
+                <tr>
+                    <td><textarea name="" ></textarea></td>
+                </tr>
+            </table>
+        </div>
+        <div id="bill" class="col-12">
+            <table cellspacing="0" id="yourOrder">
+                <caption>YOUR ORDER</caption>
+                <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                </tr>
+                <!--<tr>-->
+                    <!--<td>Five-Spice Orange Beef 	× 1</td>-->
+                    <!--<td>£9.45</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><b>Subtotal</b></td>-->
+                    <!--<td><b>£9.45</b></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><b>Total</b></td>-->
+                    <!--<td><b>£9.45</b></td>-->
+                <!--</tr>-->
+            </table>
+            <input type="button" value="PLACE ORDER" id="orderBtn" onclick="checkFormOder()">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer_above">
+        <p class="col-12">ABOUT ROSA</p>
+        <p class="col-12 footer-symbol">✻</p>
+        <p class="col-4">ROSA is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+    </div>
+    <div class="footer_below">
+        <p>© ROSA 2016 &nbsp;&nbsp; • &nbsp;&nbsp;  13 Hanway Square, London &nbsp;&nbsp;  • &nbsp;&nbsp;  Tel: 71494563  &nbsp;&nbsp; • &nbsp;&nbsp;  Handcrafted with love by <span>PixelGrade</span> Team</p>
+        <p>PERMISSIONS AND COPYRIGHT &nbsp;&nbsp; • &nbsp;&nbsp;  CONTACT THE TEAM</p>
+    </div>
+
+</div>
+</body>
+</html>

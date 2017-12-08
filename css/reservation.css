@@ -1,0 +1,384 @@
+/*header parallax*/
+#header{
+    width: 100%;
+    height: 400px;
+    float: left;
+    background-image: url("../img/reservationbg1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#welcome{
+    /*margin-left: 33.33%;*/
+    margin-top: 10%;
+}
+#welcome > p{
+    width: 100%;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+}
+#welcome  span{
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: #c59d5f;
+    animation: mymove 1s infinite;
+}
+@keyframes mymove {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+/*#welcome table{*/
+    /*width: 90%;*/
+/*}*/
+#welcome table tr td:first-child{
+    width: 45%;
+}
+#welcome table tr td:last-child{
+    width: 45%;
+}
+#welcome table tr td span{
+    text-align: center;
+    width: 100%;
+}
+
+#first-line{
+    color: #c59d5f;
+    font-size: 85px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom: -60px;
+
+}
+#first-line:first-letter{
+    font-size: 1.22em;
+}
+#second-line{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+
+}
+#third-line{
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+/*************************************************/
+/*make reservation*/
+#make-reservation{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 3%;
+}
+/*choose day*/
+#calender{
+    width: 91.66%;
+    height: auto;
+    margin-left: 4.17%;
+    padding-bottom: 5%;
+    float: left;
+    border-bottom: 2px solid #d8d8d8;
+}
+
+.first{
+    font-size: 18px;
+    color: #262526;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 0px;
+    width: 100%;
+    float: left;
+}
+.second{
+    font-size: 10px;
+    color: #b3b3b3;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    margin-bottom: 3%;
+    width: 100%;
+    float: left;
+}
+
+.day{
+    margin-right: 5%;
+    width: 230px;
+    text-align: right;
+    float: left;
+
+}
+
+
+.time{
+    margin-right: 5%;
+    width: 230px;
+    float: left;
+
+}
+.time img{
+    /*width: 18px!important;*/
+    height: auto;
+
+}
+.user{
+    width: 230px;
+    float: left;
+
+}
+#calender  div  img{
+    width: 22px;
+    margin-right: 3%;
+    height: auto;
+    float: left;
+    margin-top: 3%;
+
+}
+#calender div input{
+    float: left;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+
+}
+#calender div select{
+    float: left;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+}
+#calender input:focus{
+    outline:none;
+    border: 1px solid #c59d5f;
+}
+#calender select:focus{
+    outline: none;
+    border: 1px solid #c59d5f;
+}
+
+#tb2 {
+    /*display: none;*/
+    text-align: center;
+}
+#tb2 tr td{
+    /*border: 1px solid black;*/
+    height: 40px;
+
+}
+.button{
+    width: 100%;
+    padding: 7% 10%;
+    text-align: center;
+    color: white;
+    background-color: #262526;
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    float: left;
+    box-sizing: border-box;
+
+}
+.button:hover{
+    background-color: #c59d5f;
+    cursor: pointer;
+}
+#phone::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*anounce about the position of seat*/
+#anounce{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: auto;
+    float: left;
+    border: 2px solid #c59d5f;
+    border-radius: 3px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #515150;
+    text-align: center;
+    line-height: 1.7em;
+    font-weight: bold;
+    display: none;
+    transition: all 0.5s;
+
+}
+/*text*/
+#intro{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+#intro p{
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #515150;
+}
+#intro p span{
+    color: #262526;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+
+}
+
+/*parallax*/
+.parallax{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/reservationbg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+/*private*/
+#private{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 1%;
+}
+
+.title{
+    color: #c59d5f;
+    font-size: 100px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-top: 10%;
+    margin-bottom: -100px;
+}
+.second-title{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    color: #262526;
+}
+.symbol{
+    font-size: 17px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #9a9998;
+}
+.intro{
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    color: #515150;
+    line-height: 1.7;
+    padding: 10px;
+
+}
+.image2{
+
+    margin-right: 5%;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+.image2 img{
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.text2{
+    float: left;
+    margin-left: 7%;
+    margin-right: 2%;
+    /*border: 2px solid black;*/
+    text-align: center;
+
+}
+
+/*dinning*/
+#dinning{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 1%;
+}
+.image{
+    margin-left: 7%;
+    margin-right: 2%;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+.image img{
+    width: 90%;
+    float: left;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+.text{
+    float: left;
+    margin-right: 5%;
+    /*border: 2px solid black;*/
+    text-align: center;
+
+}
+/*champange*/
+.champange{
+    width: 91.66%;
+    height: auto;
+    float: left;
+    background-color: #c59d5f;
+    margin-left: 4.17%;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    line-height: 1.7em;
+}
+.champange p{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.champange p:first-line{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px){
+    #disk{
+        display: none;
+    }
+    #welcome{
+        margin-top: 20%;
+    }
+    #welcome > table{
+        width: 80%;
+    }
+    #intro p{
+        width: 100%;
+    }
+    .text2{
+        margin-left: 0%;
+    }
+
+}

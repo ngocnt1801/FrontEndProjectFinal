@@ -1,0 +1,220 @@
+/*header parallax*/
+#header{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-image: url("../img/menubg1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#second-line {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+/*****************************/
+/*text introduce*/
+.intro{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 3%;
+    margin-top: 5%;
+}
+.intro p{
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-right: 3.5%;
+    color: #515150;
+    line-height: 1.7em;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+/************************************/
+/*list menu for all menu*/
+.list-menu{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+/*tittle for each menu*/
+.list-menu h2{
+    font-size: 37px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #262526;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #d8d8d8;
+}
+.list-menu div div{
+    margin-top: 5%;
+}
+/*divide menu into two part*/
+.left{
+    height: auto;
+    float: left;
+    padding-top:1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    position: relative;
+}
+.right{
+    height: auto;
+    float: left;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    position: relative;
+}
+/*one item*/
+.name{
+    border-bottom: 1px dotted #b3b3b3 ;
+    margin: auto;
+
+}
+.name span:last-child{
+    position: absolute;
+    right: 6%;
+    background-color: white;
+    margin-top: 0.5%;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+    color: #515150;
+}
+.right div span:last-child{
+    /*right: 10%!important;*/
+}
+.name span:first-child{
+    background-color: white;
+    position: relative;
+    top: 2px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1em;
+    /*color: #262526;*/
+    font-weight: 600;
+    font-style: italic;
+    color: #9e7453;
+}
+.descripttion{
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    color: #515150;
+    margin-top: 1%;
+    font-weight: 500;
+}
+.special{
+    border: 2px solid #c59d5f;
+    width: 105%;
+    margin-left: -2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    box-sizing: border-box;
+    margin-top: 8%!important;
+    position: relative;
+}
+.special span:last-child{
+    position: absolute;
+    right: 2.5%;
+}
+.title_special{
+    height: 18px;
+    background-color: #c59d5f;
+    color: white;
+    padding: 3px 8px;
+    position: absolute;
+    top: -26px;
+    left: -0.4%;
+    /*margin-bottom: 1%;*/
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.symbol{
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/*parallax*/
+.parallax{
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg2{
+    background-image: url("../img/menubg2.jpg");
+}
+.bg3{
+    background-image: url("../img/menubg3.jpg");
+}
+.bg4{
+    background-image: url("../img/menubg4.jpg");
+}
+.article{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+/*champange*/
+.champange{
+    width: 91.66%;
+    height: auto;
+    float: left;
+    background-color: #c59d5f;
+    margin-left: 4.17%;
+    margin-bottom: 5%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    line-height: 1.7em;
+}
+.champange p{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.champange p:first-line{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    #disk{
+        display: none;
+    }
+    #second-line{
+        margin-top: 30%;
+    }
+    .intro p{
+        width: 90%;
+    }
+    .name span:last-child{
+        right: 3%;
+    }
+    .special span:last-child{
+        right: 2.4%;
+    }
+
+}
